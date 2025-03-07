@@ -1,0 +1,109 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "prettier",
+    "react-refresh"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "warn",
+    "react/jsx-uses-react": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react-refresh/only-export-components": [
+      "warn",
+      {
+        "allowConstantExport": true
+      }
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "prefer-const": "warn",
+    "arrow-body-style": ["warn", "as-needed"],
+    "curly": ["warn", "multi-line"],
+    "eqeqeq": ["error", "always"],
+    "no-duplicate-imports": "error",
+    "no-var": "error",
+    "object-shorthand": "warn",
+    "prefer-template": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.js", "**/*.test.jsx", "**/__tests__/**"],
+      "env": {
+        "jest": true
+      },
+      "extends": ["plugin:testing-library/react"],
+      "plugins": ["testing-library"],
+      "rules": {
+        "testing-library/await-async-query": "error",
+        "testing-library/no-await-sync-query": "error",
+        "testing-library/no-container": "error",
+        "testing-library/no-debugging-utils": "warn",
+        "testing-library/no-dom-import": "error",
+        "testing-library/no-node-access": "warn",
+        "testing-library/no-render-in-setup": "error",
+        "testing-library/prefer-screen-queries": "error",
+        "testing-library/prefer-presence-queries": "error",
+        "testing-library/prefer-find-by": "error"
+      }
+    }
+  ]
+}

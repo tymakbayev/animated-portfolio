@@ -1,0 +1,32 @@
+# robots.txt for animated-portfolio
+
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Disallow crawling of specific files and directories
+Disallow: /assets/raw/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Crawl delay for specific bots (in seconds)
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 2
+
+User-agent: Slurp
+Crawl-delay: 2
+
+# Prevent media crawlers from indexing images
+User-agent: Googlebot-Image
+Disallow: /assets/
+
+# Prevent archive.org from archiving the site
+User-agent: archive.org_bot
+Disallow: /
