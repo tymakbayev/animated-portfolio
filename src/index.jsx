@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import App from './App';
@@ -6,13 +5,6 @@ import './styles/variables.css';
 import './styles/global.css';
 import './styles/theme.css';
 import './styles/animations.css';
-
-// Polyfill for smooth scrolling in Safari and older browsers
-if (!('scrollBehavior' in document.documentElement.style)) {
-  import('scroll-behavior-polyfill').then(() => {
-    document.documentElement.style.scrollBehavior = 'smooth';
-  });
-}
 
 // Remove the loading screen once the app is ready
 const removeLoadingScreen = () => {

@@ -1,10 +1,8 @@
-import React from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { AnimationProvider } from './contexts/AnimationContext';
 import Header from './components/Header/Header';
-import MainContent from './components/MainContent/MainContent';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer/Footer';
-import './App.css';
 
 const App = () => {
   return (
@@ -12,7 +10,9 @@ const App = () => {
       <AnimationProvider>
         <div className="app">
           <Header />
-          <MainContent />
+          <main>
+            <ContactForm />
+          </main>
           <Footer />
         </div>
       </AnimationProvider>

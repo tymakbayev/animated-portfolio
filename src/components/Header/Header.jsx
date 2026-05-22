@@ -1,9 +1,8 @@
-import React from 'react';
+
 import { useTheme } from '../../contexts/ThemeContext';
 import { useAnimation } from '../../contexts/AnimationContext';
-import Navigation from '../Navigation/Navigation';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
-import './Header.css';
+import Navigation from './Navigation';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
