@@ -1,0 +1,17 @@
+{
+  "byCat": {
+    "internal_ip": 2361,
+    "adilet": 328,
+    "self": 3
+  },
+  "byType": {
+    "Кодекс": 20,
+    "Закон": 60
+  },
+  "statuses": {
+    "Действующий": 2011
+  },
+  "totalDocs": 80,
+  "totalLinks": 2692,
+  "uniqueLinks": 1969
+}

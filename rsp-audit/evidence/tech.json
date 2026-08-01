@@ -1,0 +1,19 @@
+{
+  "hasReact": false,
+  "hasVue": false,
+  "hasInertia": false,
+  "hasNext": false,
+  "hasNuxt": false,
+  "hasAngular": false,
+  "hasJquery": true,
+  "hasLivewire": false,
+  "generator": "",
+  "title": "Кәсіпкерлік саласындағы міндетті талаптар тізілімі",
+  "scripts": [
+    "/assets/js/libs/jquery-3.7.0.min.js",
+    "/assets/js/libs/select2.min.js",
+    "/assets/js/libs/autosize.min.js",
+    "/assets/js/main.js",
+    "/assets/js/search_clear.js"
+  ]
+}

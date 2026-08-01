@@ -1,0 +1,56 @@
+[
+  {
+    "id": "10_internal_ip_adilet_mirror",
+    "url": "https://10.61.42.188/rus/docs/K2100000400#z3653",
+    "status": "NAV_ERROR",
+    "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://10.61.42.188/rus/docs/K2100000400#z3653",
+    "finalUrl": "about:blank",
+    "navChain": [],
+    "screenshot": "04_dead_10.61.42.188.png"
+  },
+  {
+    "id": "11_internal_ip_client_system",
+    "url": "https://10.61.41.253/client/#!/doc/117004/rus/29769",
+    "status": "NAV_ERROR",
+    "error": "net::ERR_TUNNEL_CONNECTION_FAILED at https://10.61.41.253/client/#!/doc/117004/rus/29769",
+    "finalUrl": "about:blank",
+    "navChain": [],
+    "screenshot": "05_dead_10.61.41.253.png"
+  },
+  {
+    "id": "12_adilet_public",
+    "url": "https://adilet.zan.kz/rus/docs/K2100000400",
+    "status": 200,
+    "finalUrl": "https://adilet.zan.kz/rus/docs/K2100000400",
+    "title": "ЭКОЛОГИЧЕСКИЙ КОДЕКС РЕСПУБЛИКИ КАЗАХСТАН - ИПС \"Әділет\"",
+    "bodySnippet": "Информационно-правовая система нормативных правовых актов Республики Казахстан Институт законодательства и правовой информации Республики Казахстан Министерство Юстиции Республики Казахстан Разме",
+    "navChain": [
+      "200 https://adilet.zan.kz/rus/docs/K2100000400"
+    ],
+    "screenshot": "06_adilet_ok.png"
+  },
+  {
+    "id": "13_malformed_selflink",
+    "url": "https://rsp.gov.kz/adilet.zan.kz/rus/docs/K2100000400#z787",
+    "status": 404,
+    "finalUrl": "https://rsp.gov.kz/adilet.zan.kz/rus/docs/K2100000400#z787",
+    "title": "Not Found",
+    "bodySnippet": "404 NOT FOUND",
+    "navChain": [
+      "404 https://rsp.gov.kz/adilet.zan.kz/rus/docs/K2100000400"
+    ],
+    "screenshot": "07_broken_404.png"
+  },
+  {
+    "id": "14_search_kodeks",
+    "url": "https://rsp.gov.kz/ru/search?q=%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA%D1%81",
+    "status": 200,
+    "finalUrl": "https://rsp.gov.kz/ru/search?q=%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA%D1%81",
+    "title": "Реестр обязательных требований в сфере предпринимательства",
+    "bodySnippet": "Реестры субъектов предпринимательства RU KZ РЕГУЛЯТОРНЫЕ АКТЫ ПРОВЕРКИ БИЗНЕСА РСП РССП РСРО РДПО РМГП РНПО Реестр обязательных требований в сфере предпринимательства Найти Фильтры 2023 2024 2025 2026",
+    "navChain": [
+      "200 https://rsp.gov.kz/ru/search?q=%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA%D1%81"
+    ],
+    "screenshot": "08_search.png"
+  }
+]
